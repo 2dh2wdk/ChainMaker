@@ -1,4 +1,4 @@
-package kr.happyjob.scm.gil.model;
+package kr.happyjob.chainmaker.basic.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package kr.happyjob.scm.websocket.domain;
+package kr.happyjob.chainmaker.common.websocket.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

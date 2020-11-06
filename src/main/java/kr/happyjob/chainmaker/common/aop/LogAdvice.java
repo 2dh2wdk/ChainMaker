@@ -1,4 +1,4 @@
-package kr.happyjob.scm.common;
+package kr.happyjob.chainmaker.common.aop;
 
 import java.util.Arrays;
 
@@ -22,7 +22,7 @@ public class LogAdvice {
 	 // 컨트롤러, 서비스, DAO의 모든 method를 실행 전후에 logPrint method가 자동으로 실행된다.
 	 // .. : 하위의 모든 디렉토리를 의미
 	 // *(..) : * - 하위의 모든 메서드, (..) - 모든 매개변수
-	 @Around("execution(* kr.happyjob.scm..*Controller.*(..))")
+	 @Around("execution(* kr.happyjob.chainmaker..*Controller.*(..))")
 	 public Object logPrinnt(ProceedingJoinPoint joinPoint) throws Throwable{
 	     // 실행 시간 체크 : 시작시간
 	     long start = System.currentTimeMillis();

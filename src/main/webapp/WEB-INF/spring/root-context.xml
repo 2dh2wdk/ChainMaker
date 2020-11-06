@@ -41,8 +41,8 @@
 	<bean id="mysqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="mysqlDataSource" />
 		<property name="configLocation" value="/WEB-INF/mybatis-config.xml" />
-		<property name="typeAliasesPackage" value="kr.happyjob.scm" />
-		<property name="mapperLocations" value="classpath*:mappers/*/*Mapper.xml" />
+		<property name="typeAliasesPackage" value="kr.happyjob.chainmaker" />
+		<property name="mapperLocations" value="classpath*:sql/*/*Mapper.xml" />
 	</bean>
 
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
@@ -51,7 +51,7 @@
 	
 	<!-- MyBatis dao 스캔 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="kr.happyjob.scm.**.dao" />
+		<property name="basePackage" value="kr.happyjob.chainmaker.**.dao" />
 	</bean>
 	
 </beans>

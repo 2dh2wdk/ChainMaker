@@ -1,6 +1,6 @@
-package kr.happyjob.scm.gil.dao;
+package kr.happyjob.chainmaker.basic.dao;
 
-import kr.happyjob.scm.gil.model.UserVO;
+import kr.happyjob.chainmaker.basic.model.UserVO;
 
 public interface UserMapper {
 

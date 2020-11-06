@@ -1,10 +1,10 @@
-package kr.happyjob.scm.websocket.controller;
+package kr.happyjob.chainmaker.common.websocket.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.util.HtmlUtils;
 
-import kr.happyjob.scm.websocket.domain.Greeting;
-import kr.happyjob.scm.websocket.domain.HelloMessage;
+import kr.happyjob.chainmaker.common.websocket.domain.Greeting;
+import kr.happyjob.chainmaker.common.websocket.domain.HelloMessage;
 
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;

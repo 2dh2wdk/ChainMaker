@@ -1,6 +1,6 @@
-package kr.happyjob.scm.gil.service;
+package kr.happyjob.chainmaker.basic.service;
 
-import kr.happyjob.scm.gil.model.UserDTO;
+import kr.happyjob.chainmaker.basic.model.UserDTO;
 
 public interface UserService {
 

@@ -27,6 +27,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- @ 붙은 component들 scan의 경로가 kr.happyjob 아래 패키지 전체임을 선언 -->
 	<context:component-scan base-package="kr.happyjob.*" />
 	
 	<!-- aop 부분 -->

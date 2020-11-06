@@ -1,4 +1,4 @@
-package kr.happyjob.scm.gil.controller;
+package kr.happyjob.chainmaker.basic.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,15 +8,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.happyjob.scm.gil.model.UserDTO;
-import kr.happyjob.scm.gil.model.UserVO;
-import kr.happyjob.scm.gil.service.UserService;
+import kr.happyjob.chainmaker.basic.model.UserDTO;
+import kr.happyjob.chainmaker.basic.model.UserVO;
+import kr.happyjob.chainmaker.basic.service.UserService;
 
+// 클래스에 Controller를 붙여줘서 DispatcherServlet이 HandlerMapping할 때
+// 경로를 찾아갈 대상임을 선언해준다.
 @Controller
-@RequestMapping(value = "/gil")
-public class GilController {
+
+//그 따라갈 경로명이 /basic이다.
+@RequestMapping(value = "/basic")
+public class BasicController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(GilController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BasicController.class);
 	
 	@Autowired
 	UserService userService;
@@ -44,7 +48,7 @@ public class GilController {
 	}
 	
 	// Vue 관련 기본 예제
-	@RequestMapping(value = "/vuebasic", method = RequestMethod.GET)
+	@RequestMapping(value = "/vue", method = RequestMethod.GET)
 	public String vueBasic(){
 
 		logger.info("GilContorller.vueBasic() 실행 중");
@@ -53,7 +57,7 @@ public class GilController {
 	}
 	
 	// Vue dataTable 예제
-	@RequestMapping(value = "/vuedatatable", method = RequestMethod.GET)
+	@RequestMapping(value = "/datatable", method = RequestMethod.GET)
 	public String vueDataTable(){
 
 		logger.info("GilContorller.vueDataTable() 실행 중");
