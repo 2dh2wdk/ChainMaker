@@ -10,6 +10,7 @@
 <title>Vue Basic</title>
 
 <jsp:include page="/WEB-INF/views/common/include.jsp"/>
+<script type="text/javascript" charset="utf-8" src="${pageContext.request.contextPath}/resource/js/alert.js"></script>
 
 </head>
 
@@ -20,7 +21,7 @@
   		{{ message }}
 	</div>
 
-<button onclick="testJs()">test!</button>
+<button onclick="al()">test!</button>
 
 
 <!-- 

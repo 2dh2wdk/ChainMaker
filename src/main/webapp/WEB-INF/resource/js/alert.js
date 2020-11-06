@@ -1,0 +1,3 @@
+function al(){
+	alert("alert!!!!");
+}

@@ -49,9 +49,12 @@
 		<constructor-arg ref="mysqlSessionFactory" />
 	</bean>
 	
-	<!-- MyBatis dao 스캔 -->
+	<!-- MyBatis dao scan -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="kr.happyjob.chainmaker.**.dao" />
 	</bean>
+	
+	<!-- WEB-INF 아래 resource scan -->
+	<mvc:resources location="/WEB-INF/resource/" mapping="/resource/**" />
 	
 </beans>
